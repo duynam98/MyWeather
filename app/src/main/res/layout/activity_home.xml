@@ -1,8 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".view.home.HomeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.home.HomeActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/layout_container_1"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_8"
+                android:background="@drawable/framelayout_border"
+                app:layout_constraintTop_toBottomOf="@id/container1">
+
+                <include layout="@layout/layout_container_2"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_287"
+            android:layout_marginTop="@dimen/size_5"
+            android:background="@drawable/framelayout_border"
+            app:layout_constraintTop_toBottomOf="@id/container2">
+
+            <include layout="@layout/layout_container_3"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_287"
+            android:layout_marginTop="@dimen/size_5"
+            android:background="@drawable/framelayout_border"
+            app:layout_constraintTop_toBottomOf="@+id/container3">
+
+            <include layout="@layout/layout_container_4"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_176"
+            android:layout_marginTop="@dimen/size_5"
+            android:background="@drawable/framelayout_border"
+            app:layout_constraintTop_toBottomOf="@+id/container4">
+
+            <include layout="@layout/layout_container_5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
+

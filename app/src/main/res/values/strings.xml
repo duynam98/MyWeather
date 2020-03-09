@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">My Weather</string>
     <string name="error_network_button">GO BACK</string>
+    <string name="next_3hour">3 GIỜ TIẾP</string>
+    <string name="doC">°C</string>
+    <string name="weather_7day">7-day forecast</string>
+
+    <string name="title_containner3">Precipitation</string>
+    <string name="layout_container_3_chanceofrain">Chance of Rain</string>
+    <string name="layout_container_3_dewpoint">Dew Point</string>
+    <string name="layout_container_3_humid">Humid</string>
+    <string name="layout_container_3_realFeel">Real Feel</string>
+
+    <string name="layout_container_4_title">Sun &amp; Moon</string>
+    <string name="layout_container_4_fullmoon">Full moon</string>
+    <string name="layout_container_4_lastQuater">LastQuater</string>
+    <string name="layout_container_5_title"><![CDATA[Wind & Visibility]]></string>
+    <string name="layout_container_5_kmh">km/h</string>
+
 </resources>

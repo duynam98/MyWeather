@@ -9,5 +9,10 @@
     <color name="error_network_button_startColor">#ED701B</color>
     <color name="error_network_button_endColor">#EF9224</color>
 
+    <color name="text_nomal">#898989</color>
+
+    <color name="layout_container4_text_color">#FE8000</color>
+
+    <color name="layout_container_5_text_color">#7DCE7A</color>
 
 </resources>
