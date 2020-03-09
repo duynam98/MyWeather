@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="error"
+            type="com.duynam.myweather.view.errornetwork.ErrorNetWorkFragment" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/error_network_button">
+
+        <ImageView
+            android:id="@+id/img_err"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_27"
+            android:layout_marginTop="@dimen/size_96"
+            android:layout_marginRight="@dimen/size_27"
+            android:layout_marginBottom="@dimen/size_287"
+            android:src="@drawable/error_network_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="@dimen/size_155"
+            android:layout_height="@dimen/size_37"
+            android:layout_marginTop="@dimen/size_40"
+            android:src="@drawable/error_network_disconnect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_err"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/btn_goback"
+            android:layout_width="@dimen/size_270"
+            android:layout_height="@dimen/size_45"
+            android:layout_marginLeft="@dimen/size_45"
+            android:layout_marginTop="@dimen/size_569"
+            android:layout_marginRight="@dimen/size_45"
+            android:layout_marginBottom="@dimen/size_24"
+            android:background="@drawable/btn_goback_gradien"
+            android:onClick="@{error::goback}"
+            android:text="@string/error_network_button"
+            android:textColor="@color/error_network_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
