@@ -16,5 +16,6 @@
     <string name="layout_container_4_lastQuater">LastQuater</string>
     <string name="layout_container_5_title"><![CDATA[Wind & Visibility]]></string>
     <string name="layout_container_5_kmh">km/h</string>
+    <string name="layout_container_2_add4">+ 4 More</string>
 
 </resources>

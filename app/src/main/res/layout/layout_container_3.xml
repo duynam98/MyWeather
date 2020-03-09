@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_title_prec"
+        android:layout_width="@dimen/size_200"
+        android:layout_height="@dimen/size_24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_10"
+        android:gravity="center"
+        android:text="@string/title_containner3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_humid"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_51"
+        android:layout_marginTop="@dimen/size_22"
+        android:gravity="center"
+        android:textColor="@color/text_nomal"
+        android:textSize="@dimen/text_size_43"
+        app:layout_constraintStart_toStartOf="@id/tv_changceofrain"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_prec"
+        app:layout_constraintEnd_toEndOf="@id/tv_changceofrain"/>
+
+    <TextView
+        android:id="@+id/tv_changceofrain"
+        android:layout_width="@dimen/size_109"
+        android:layout_height="@dimen/size_24"
+        android:gravity="center"
+        android:text="@string/layout_container_3_chanceofrain"
+        android:textColor="@color/text_nomal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_humid"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginStart="@dimen/size_16"/>
+
+    <ImageView
+        android:layout_width="@dimen/size_40"
+        android:layout_height="@dimen/size_40"
+        android:layout_marginTop="@dimen/text_size_48"
+        android:src="@drawable/ic_icon_umbrella"
+        app:layout_constraintEnd_toEndOf="@id/tv_changceofrain"
+        app:layout_constraintStart_toStartOf="@id/tv_changceofrain"
+        app:layout_constraintTop_toBottomOf="@id/tv_changceofrain"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/img_rainmm"
+        android:layout_width="@dimen/size_22"
+        android:layout_height="@dimen/size_22"
+        android:layout_marginTop="@dimen/size_25"
+        android:src="@drawable/ic_rainmm"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_prec"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_prec"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/img_dewpoint"
+        android:layout_width="@dimen/size_22"
+        android:layout_height="@dimen/size_22"
+        android:layout_marginTop="@dimen/size_36"
+        android:src="@drawable/ic_dewpoint"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_prec"
+        app:layout_constraintTop_toBottomOf="@id/img_rainmm"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/img_giotnuoc"
+        android:layout_width="@dimen/size_22"
+        android:layout_height="@dimen/size_22"
+        android:layout_marginTop="@dimen/size_36"
+        android:src="@drawable/ic_humid"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_prec"
+        app:layout_constraintTop_toBottomOf="@id/img_dewpoint"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/img_nhietke"
+        android:layout_width="@dimen/size_22"
+        android:layout_height="@dimen/size_22"
+        android:layout_marginTop="@dimen/size_36"
+        android:src="@drawable/ic_realfeel"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_prec"
+        app:layout_constraintTop_toBottomOf="@id/img_giotnuoc"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/tv_rain"
+        android:layout_width="@dimen/size_57"
+        android:layout_height="@dimen/size_24"
+        android:textColor="@color/text_nomal"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toEndOf="@id/img_rainmm"
+        app:layout_constraintTop_toTopOf="@id/img_rainmm" />
+
+    <TextView
+        android:layout_width="@dimen/size_97"
+        android:layout_height="@dimen/size_24"
+        android:text="@string/title_containner3"
+        android:textColor="@color/text_nomal"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toEndOf="@id/img_rainmm"
+        app:layout_constraintTop_toBottomOf="@id/img_rainmm" />
+
+    <TextView
+        android:id="@+id/tv_dewpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_24"
+        android:textColor="@color/text_nomal"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toEndOf="@id/img_dewpoint"
+        app:layout_constraintTop_toTopOf="@id/img_dewpoint" />
+
+    <TextView
+        android:layout_width="@dimen/size_97"
+        android:layout_height="@dimen/size_24"
+        android:text="@string/layout_container_3_dewpoint"
+        android:textColor="@color/text_nomal"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toEndOf="@id/img_dewpoint"
+        app:layout_constraintTop_toBottomOf="@id/img_dewpoint" />
+
+    <TextView
+        android:id="@+id/tv_giotnuoc"
+        android:layout_width="@dimen/size_57"
+        android:layout_height="@dimen/size_24"
+        android:textColor="@color/text_nomal"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toEndOf="@id/img_giotnuoc"
+        app:layout_constraintTop_toTopOf="@id/img_giotnuoc" />
+
+    <TextView
+        android:layout_width="@dimen/size_97"
+        android:layout_height="@dimen/size_24"
+        android:layout_below="@+id/tv_giotnuoc"
+        android:text="@string/layout_container_3_humid"
+        android:textColor="@color/text_nomal"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toEndOf="@id/img_giotnuoc"
+        app:layout_constraintTop_toBottomOf="@id/img_giotnuoc" />
+
+    <TextView
+        android:id="@+id/tv_nhietke"
+        android:layout_width="@dimen/size_57"
+        android:layout_height="@dimen/size_24"
+        android:textColor="@color/text_nomal"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toEndOf="@id/img_nhietke"
+        app:layout_constraintTop_toTopOf="@id/img_nhietke" />
+
+    <TextView
+        android:layout_width="@dimen/size_97"
+        android:layout_height="@dimen/size_24"
+        android:text="@string/layout_container_3_realFeel"
+        android:textColor="@color/text_nomal"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toEndOf="@id/img_nhietke"
+        app:layout_constraintTop_toBottomOf="@id/img_nhietke" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

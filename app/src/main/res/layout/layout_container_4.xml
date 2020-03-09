@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_sunmom"
+        android:layout_width="@dimen/size_200"
+        android:layout_height="@dimen/size_24"
+        android:layout_marginTop="@dimen/size_10"
+        android:gravity="center"
+        android:text="@string/title_containner3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_fullmon"
+        android:layout_width="@dimen/size_102"
+        android:layout_height="@dimen/size_18"
+        android:layout_marginStart="@dimen/size_24"
+        android:layout_marginLeft="@dimen/size_24"
+        android:layout_marginTop="@dimen/size_24"
+        android:text="@string/layout_container_4_fullmoon"
+        android:textColor="@color/layout_container4_text_color"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sunmom" />
+
+    <TextView
+        android:layout_width="@dimen/size_102"
+        android:layout_height="@dimen/size_18"
+        android:textColor="@color/layout_container4_text_color"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintStart_toStartOf="@id/tv_fullmon"
+        app:layout_constraintTop_toBottomOf="@id/tv_fullmon" />
+
+    <ImageView
+        android:id="@+id/img_sun"
+        android:layout_width="@dimen/size_33"
+        android:layout_height="@dimen/size_33"
+        android:layout_marginTop="@dimen/size_22"
+        android:src="@drawable/ic_sunmoon2"
+        app:layout_constraintEnd_toEndOf="@id/tv_sunmom"
+        app:layout_constraintStart_toStartOf="@id/tv_sunmom"
+        app:layout_constraintTop_toBottomOf="@id/tv_sunmom"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="@dimen/size_17"
+        android:layout_height="@dimen/size_17"
+        android:src="@drawable/ic_sunmoon1"
+        app:layout_constraintBottom_toBottomOf="@id/img_sun"
+        app:layout_constraintEnd_toEndOf="@id/tv_fullmon"
+        app:layout_constraintTop_toTopOf="@id/img_sun"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_lastQuarter"
+        android:layout_width="@dimen/size_102"
+        android:layout_height="@dimen/size_18"
+        android:layout_below="@id/tv_sunmom"
+        android:layout_marginEnd="@dimen/size_24"
+        android:layout_marginRight="@dimen/size_24"
+        android:gravity="end"
+        android:text="@string/layout_container_4_lastQuater"
+        android:textColor="@color/layout_container4_text_color"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sunmom"
+        app:layout_constraintTop_toTopOf="@id/tv_fullmon" />
+
+    <TextView
+        android:layout_width="@dimen/size_102"
+        android:layout_height="@dimen/size_18"
+        android:gravity="end"
+        android:textColor="@color/layout_container4_text_color"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintStart_toStartOf="@id/tv_lastQuarter"
+        app:layout_constraintTop_toBottomOf="@id/tv_fullmon" />
+
+    <ImageView
+        android:layout_width="@dimen/size_17"
+        android:layout_height="@dimen/size_17"
+        android:src="@drawable/ic_sunmoon3"
+        app:layout_constraintBottom_toBottomOf="@id/img_sun"
+        app:layout_constraintStart_toStartOf="@id/tv_lastQuarter"
+        app:layout_constraintTop_toTopOf="@id/img_sun"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_sunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_18"
+        android:layout_marginStart="@dimen/size_40"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginBottom="@dimen/size_33"
+        android:textColor="@color/layout_container4_text_color"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sunset"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_18"
+        android:layout_marginEnd="@dimen/size_40"
+        android:layout_marginRight="@dimen/size_40"
+        android:layout_marginBottom="@dimen/size_33"
+        android:gravity="end"
+        android:textColor="@color/layout_container4_text_color"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

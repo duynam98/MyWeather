@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_title_win"
+        android:layout_width="@dimen/size_200"
+        android:layout_height="@dimen/size_24"
+        android:layout_marginTop="@dimen/size_10"
+        android:gravity="center"
+        android:text="@string/layout_container_5_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_speedwind"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_38"
+        android:layout_marginStart="@dimen/size_36"
+        android:layout_marginTop="@dimen/size_20"
+        android:gravity="center"
+        android:textColor="@color/layout_container_5_text_color"
+        android:textSize="@dimen/text_size_32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_win"
+        android:layout_marginLeft="@dimen/size_36" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/layout_container_5_kmh"
+        android:textColor="@color/layout_container_5_text_color"
+        app:layout_constraintBottom_toBottomOf="@id/tv_speedwind"
+        app:layout_constraintStart_toEndOf="@id/tv_speedwind" />
+
+    <ImageView
+        android:id="@+id/img_car"
+        android:layout_width="@dimen/size_127"
+        android:layout_height="@dimen/size_24"
+        android:layout_marginRight="@dimen/size_24"
+        android:layout_marginEnd="@dimen/size_24"
+        android:layout_marginBottom="@dimen/size_35"
+        android:src="@drawable/ic_car"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/img_car"
+        android:layout_marginRight="@dimen/size_85"
+        android:layout_marginEnd="@dimen/size_85"
+        app:layout_constraintBottom_toTopOf="@id/img_car"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_speedcar"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_38"
+            android:textColor="@color/layout_container_5_text_color"
+            android:textSize="@dimen/text_size_32"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/layout_container_5_kmh"
+            android:textColor="@color/layout_container_5_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/tv_speedcar"
+            app:layout_constraintStart_toEndOf="@id/tv_speedcar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img_tree"
+        android:layout_width="@dimen/size_74"
+        android:layout_height="@dimen/size_59"
+        android:layout_marginLeft="@dimen/size_23"
+        android:layout_marginStart="@dimen/size_23"
+        android:src="@drawable/ic_tree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_speedwind"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:layout_width="@dimen/size_64"
+        android:layout_height="@dimen/size_17"
+        android:layout_marginBottom="@dimen/size_36"
+        android:textColor="@color/layout_container_5_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_tree" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/img_pinmap"
+            android:layout_width="@dimen/size_20"
+            android:layout_height="@dimen/size_20"
+            android:layout_marginStart="@dimen/size_32"
+            android:layout_marginLeft="@dimen/size_32"
+            android:layout_marginTop="@dimen/size_59"
+            android:src="@drawable/ic_map_pin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/img_menu_fragment"
+            android:layout_width="@dimen/size_24"
+            android:layout_height="@dimen/size_24"
+            android:layout_marginEnd="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_16"
+            android:src="@drawable/ic_menu"
+            app:layout_constraintBottom_toBottomOf="@id/img_pinmap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/img_pinmap"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_29"
+            android:layout_marginTop="@dimen/size_28"
+            android:textColor="@color/error_network_button"
+            android:textSize="@dimen/text_size_19"
+            app:layout_constraintStart_toStartOf="@id/img_pinmap"
+            app:layout_constraintTop_toBottomOf="@id/img_pinmap" />
+
+        <TextView
+            android:id="@+id/tv_nhietdo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/error_network_button"
+            android:textSize="@dimen/text_size_82"
+            app:layout_constraintStart_toStartOf="@id/img_pinmap"
+            app:layout_constraintTop_toBottomOf="@id/tv_city"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="@dimen/size_44"
+            android:layout_height="wrap_content"
+            android:text="@string/doC"
+            android:textColor="@color/error_network_button"
+            android:textSize="@dimen/text_size_36"
+            app:layout_constraintStart_toEndOf="@id/tv_nhietdo"
+            app:layout_constraintTop_toTopOf="@id/tv_nhietdo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_29"
+            android:layout_marginStart="@dimen/size_16"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_5"
+            android:textColor="@color/error_network_button"
+            android:textSize="@dimen/text_size_19"
+            app:layout_constraintBottom_toBottomOf="@id/tv_nhietdo"
+            app:layout_constraintStart_toEndOf="@id/tv_nhietdo" />
+
+        <TextView
+            android:id="@+id/tv_currendate"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_18"
+            android:layout_marginTop="@dimen/size_8"
+            android:textColor="@color/error_network_button"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/img_pinmap"
+            app:layout_constraintTop_toBottomOf="@id/tv_nhietdo" />
+
+        <TextView
+            android:id="@+id/tv_weatherMain"
+            android:layout_width="@dimen/size_129"
+            android:layout_height="@dimen/size_22"
+            android:layout_marginTop="@dimen/size_5"
+            android:textColor="@color/error_network_button"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/img_pinmap"
+            app:layout_constraintTop_toBottomOf="@id/tv_currendate" />
+
+        <TextView
+            android:id="@+id/tv_descWeather"
+            android:layout_width="@dimen/size_284"
+            android:layout_height="@dimen/size_31"
+            android:layout_marginTop="@dimen/size_8"
+            android:text=""
+            android:textColor="@color/error_network_button"
+            android:textSize="@dimen/text_size_12"
+            app:layout_constraintStart_toStartOf="@id/img_pinmap"
+            app:layout_constraintTop_toBottomOf="@id/tv_weatherMain" />
+
+        <TextView
+            android:id="@+id/tv_title24"
+            android:layout_width="@dimen/size_87"
+            android:layout_height="@dimen/size_22"
+            android:includeFontPadding="false"
+            android:text="@string/next_3hour"
+            android:textColor="@color/error_network_button"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/frame_24hour"
+            app:layout_constraintStart_toStartOf="@id/frame_24hour"
+            app:layout_constraintTop_toBottomOf="@id/tv_descWeather"
+            app:layout_constraintVertical_bias="1" />
+
+        <FrameLayout
+            android:id="@+id/frame_24hour"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_111"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/size_8"
+            android:layout_marginTop="@dimen/size_13"
+            android:layout_marginRight="@dimen/size_8"
+            android:background="@drawable/framelayout_border"
+            app:layout_constraintBottom_toTopOf="@id/img_nextContainer"
+            app:layout_constraintStart_toStartOf="@id/tv_title24">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list3hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_16" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/img_nextContainer"
+            android:layout_width="@dimen/size_44"
+            android:layout_height="@dimen/size_44"
+            android:layout_marginTop="@dimen/size_8"
+            android:src="@drawable/ic_keyboard_arrow_down_white_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
